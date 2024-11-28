@@ -69,7 +69,7 @@ const Collection = () => {
 
   useEffect(()=>{
     applyFilter();
-  },[category,subCategory,search,showFilter])
+  },[category,subCategory,search,showFilter,products])
   
   useEffect(()=>{
     sortProduct();
@@ -88,13 +88,13 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 textsm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='2-3' type="checkbox"  value={'Men'}onChange={toggleCategory}/>Men      
+              <input className='2-3' type="checkbox"  value={'men'}onChange={toggleCategory}/>Men      
             </p>
             <p className='flex gap-2'>
-              <input className='2-3' type="checkbox"  value={'Women'}onChange={toggleCategory}/>Women      
+              <input className='2-3' type="checkbox"  value={'women'}onChange={toggleCategory}/>Women      
             </p>
             <p className='flex gap-2'>
-              <input className='2-3' type="checkbox"  value={'Kids'}onChange={toggleCategory}/>Kids      
+              <input className='2-3' type="checkbox"  value={'kids'}onChange={toggleCategory}/>Kids      
             </p>
           </div>
         </div>
